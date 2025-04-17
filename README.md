@@ -8,7 +8,19 @@ Codeflex is a AI fitness trainer that helps you improve your health and fitness 
 
 🎙️ Voice AI Assistant (Vapi)
 
+💾 Database (Convex)
 
 ## Vapi Workflow Diagram
 ![Vapi Workflow Diagram](/public/vapi-ai-workflow-diagram.png)
 
+## Convex Database 
+- **Install command:** 
+  ```
+  npm install convex
+  ```
+- **Set up a Convex dev deployment:**
+  ```
+  npx convex dev
+  ```
+- **Configure Convex with Clerk for authentication and authorization:**
+- **Create Schema**
