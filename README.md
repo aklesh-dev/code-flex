@@ -24,3 +24,13 @@ Codeflex is a AI fitness trainer that helps you improve your health and fitness 
   ```
 - **Configure Convex with Clerk for authentication and authorization:**
 - **Create Schema**
+
+## Web Hooks
+- Automated message that are sent when something happens.
+- Using `svix` library for verifying webhooks.
+  ```
+  npm install svix
+  ```
+
+  ### Clerk Integration with Convex
+  ![Integrating Clerk with Convex](/public//ClerkIntegrateWithConvex.png)
