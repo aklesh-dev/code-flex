@@ -10,6 +10,8 @@ Codeflex is a AI fitness trainer that helps you improve your health and fitness 
 
 💾 Database (Convex)
 
+🧠 LLM Integration (Gemini AI)
+
 ## Vapi Workflow Diagram
 ![Vapi Workflow Diagram](/public/vapi-ai-workflow-diagram.png)
 
@@ -34,3 +36,12 @@ Codeflex is a AI fitness trainer that helps you improve your health and fitness 
 
   ### Clerk Integration with Convex
   ![Integrating Clerk with Convex](/public//ClerkIntegrateWithConvex.png)
+
+## Gemini AI Integration
+- Create a Gemini AI account and get the API key.
+  [Link to Gemini AI Studio](https://aistudio.google.com/apikey)
+- Setup the Gemini API key in the environment variables of the convex, bez convex is used as backend.
+- **GenAI Install command:** 
+    ```
+    npm install @google/generative-ai
+    ```
