@@ -1,3 +1,4 @@
+![CodeFlex Home Page](./public/HomePage.png)
 # Codeflex
 Codeflex is a AI fitness trainer that helps you improve your health and fitness by providing you with a personalized workout plan based on your fitness goals.
 
