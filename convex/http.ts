@@ -66,7 +66,26 @@ http.route({
       }
     }
 
-    // TODO: user.updated EVENT HANDLER
+    // Update user profile
+    if (eventType === "user.updated") {
+      const {id, email_addresses, first_name, last_name, image_url } = evt.data;
+
+      const email = email_addresses[0].email_address;
+      const name = `${first_name || ""} ${last_name || ""}`.trim();
+
+      try {
+        await ctx.runMutation(api.users.updateUser, {
+          clerkId: id,
+          email,
+          name,
+          image: image_url, 
+        });
+        
+      } catch (error) {
+        console.error("Error updating user", error);
+        return new Response("Error updating user", { status: 500 });
+      }
+    }
 
     return new Response("Webhook processed successfully", { status: 200 });
   }),
